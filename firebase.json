@@ -11,6 +11,10 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "rules": {
+      ".read": true,
+      ".write": true
+    }
   }
 }
