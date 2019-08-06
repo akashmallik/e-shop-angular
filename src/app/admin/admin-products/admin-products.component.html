@@ -1,3 +1,5 @@
+<!-- <ng-progress></ng-progress> -->
+
 <a routerLink="/admin/products/new" class="btn btn-primary">New Products</a>
 <table class="table">
   <thead>
@@ -9,11 +11,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let p of products | async; index as i ">
-      <th scope="row">{{ i }}</th>
+    <tr *ngFor="let p of products; index as i">
+      <th scope="row">{{ i+1 }}</th>
       <td>{{ p.title }}</td>
       <td>{{ p.price }}</td>
-      <td><a [routerLink]="['/admin/products/', p.$key]" class="btn btn-info">Edit</a></td>
+      <td><a [routerLink]="['/admin/products/', p.key]" class="btn btn-info">Edit</a></td>
     </tr>
   </tbody>
 </table>

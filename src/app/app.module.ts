@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+// import { NgProgressModule } from 'ngx-progressbar';
 
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
@@ -48,7 +49,8 @@ import { CustomFormsModule } from 'ng2-validation';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    CustomFormsModule
+    CustomFormsModule,
+    // NgProgressModule
   ],
   providers: [
     CategoryService
